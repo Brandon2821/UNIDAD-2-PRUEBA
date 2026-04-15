@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
+#include <cctype>
 using namespace std;
 
 class Ahorcado {
@@ -102,7 +102,7 @@ public:
     }
 };
 
-int main() {
+void menuAhorcado() {
     string palabra;
     char letra;
 
@@ -130,7 +130,6 @@ int main() {
     } else {
         cout << "\nPerdiste. La palabra era: " << juego.getPalabraSecreta() << endl;
     }
-
-    return 0;
+    
 }
 
