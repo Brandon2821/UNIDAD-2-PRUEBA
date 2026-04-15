@@ -1,0 +1,16 @@
+Solución al error
+El error se encuentra en la línea 30 a la 36
+Este es el error planteado
+Para solucionar este problema
+El primer problema que encontramos estaba en el bucle for: se estaba usando i--
+en vez de i++, lo que generaba un bucle infinito porque la condición <= días nunca
+se cumplía. La solución fue simple: cambiar el decremento por un incremento
+para que el contador avanzara normalmente hasta llegar al límite.
+Después notamos que la función estaba devolviendo la variable día en lugar de fin,
+que es la que guarda el resultado de la penalización. Básicamente estaba
+retornando el dato equivocado, así que lo corregimos para que devuelva la
+sanción monetaria correcta.
+Por último, revisamos que la lógica del algoritmo tuviera sentido: el cálculo de la
+penalización arranca con un valor base el primer día y va sumando un monto extra
+cada día siguiente. Así funciona de forma consistente de principio a fin.predecible
+a lo largo de toda la ejecución.
